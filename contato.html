@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Yasmi About</title>
+
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(
+          to bottom,
+          #203c27,
+          #224a38,
+          #2f6a56,
+          #5d8477
+        );
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
+
+      .navbar {
+        background-color: #333;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .navbar .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: rgb(255, 248, 220);
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        padding: 8px 12px;
+        border-radius: 20px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .navbar ul li a:hover {
+        background-color: rgb(255, 248, 220);
+        transform: translateY(-2px);
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        text-align: center;
+        padding: 100px 20px 20px; /* Espaço para o header fixo */
+      }
+
+      h1 {
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+        animation: fade-in 1s ease-in;
+      }
+
+      p {
+        font-size: 1.1rem;
+        margin-top: 15px;
+      }
+
+      form {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        min-width: 400px;
+        text-align: center;
+      }
+
+      .social-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .social-buttons a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        background: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .social-buttons a:hover {
+        background: #193516;
+        color: white;
+        transform: scale(1.1);
+      }
+
+      footer {
+        background-color: #333;
+        padding: 10px 0px;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Just Yasmi About</div>
+        <ul>
+          <li><a href="JustYasmiAbout.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="valores.html">Preços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Meios de Contato</h1>
+      <form>
+        <div class="social-buttons">
+          <a
+            href="https://www.reddit.com/u/YasmiArduini/s/OP8xast54w"
+            target="_blank"
+            title="Reddit"
+            ><i class="fab fa-reddit"></i
+          ></a>
+          <a href="https://wa.me/11993447008" target="_blank" title="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/yasmi_arduini"
+            target="_blank"
+            title="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://github.com/YasmiArduini"
+            target="_blank"
+            title="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+        <p>Entre em contato comigo por meio dessas plataformas.</p>
+      </form>
+    </div>
+
+    <footer>© 2025 Just Yasmi About. Todos os Direitos Reservados.</footer>
+  </body>
+</html>
