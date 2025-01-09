@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Yasmi About</title>
+
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(
+          to bottom,
+          #203c27,
+          #224a38,
+          #2f6a56,
+          #5d8477
+        );
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
+
+      .navbar {
+        background-color: #333;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .navbar .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: rgb(255, 248, 220);
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        padding: 8px 12px;
+        border-radius: 20px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .navbar ul li a:hover {
+        background-color: rgb(255, 248, 220);
+        transform: translateY(-2px);
+      }
+
+      .wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        font-size: 2.8rem;
+        animation: fade-in 1s ease-in;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        color: #e0e0e0;
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-top: 30px;
+        color: #ff6f61;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 30px;
+        width: 100%;
+        max-width: 1200px;
+      }
+
+      .skill-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .skill-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .skill-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .skill-card p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #f1f1f1;
+      }
+
+      footer {
+        background-color: #333;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #fff;
+        margin-top: auto;
+      }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(-80px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .navbar ul {
+          gap: 10px;
+        }
+
+        .navbar ul li a {
+          padding: 6px 10px;
+          font-size: 0.9rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+
+        .skill-card {
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Just Yasmi About</div>
+        <ul>
+          <li><a href="JustYasmiAbout.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="valores.html">Preços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <main>
+        <div class="container">
+          <h1>Sobre Mim</h1>
+          <p>
+            Olá! Meu nome é Yasmi e sou desenvolvedora apaixonada por
+            tecnologia. Ao longo da minha carreira, tenho trabalhado em diversos
+            projetos, buscando sempre melhorar minhas habilidades e entregar
+            soluções eficientes. Com experiência em backend e frontend, minha
+            missão é criar aplicativos e sistemas que proporcionem uma
+            experiência de usuário única e funcional.
+          </p>
+
+          <p>
+            Esse portfólio é uma amostra de alguns dos projetos que já
+            desenvolvi. Aqui, você poderá ver as linguagens de programação que
+            utilizo, bem como as tecnologias que mais gosto de trabalhar. Estou
+            sempre aberta a novos desafios e parcerias!
+          </p>
+
+          <h2>Minhas Habilidades</h2>
+          <div class="skills">
+            <div class="skill-card">
+              <h3>Java</h3>
+              <p>
+                Desenvolvo sistemas robustos e escaláveis com Java, focando no
+                desempenho e segurança.
+              </p>
+            </div>
+            <div class="skill-card">
+              <h3>C#</h3>
+              <p>
+                Trabalho com C# para construir aplicações desktop e web
+                utilizando o .NET.
+              </p>
+            </div>
+            <div class="skill-card">
+              <h3>TypeScript</h3>
+              <p>
+                Utilizo TypeScript para desenvolver interfaces dinâmicas e
+                escaláveis com frameworks como Angular e React.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>© 2025 Just Yasmi About. Todos os Direitos Reservados.</footer>
+  </body>
+</html>

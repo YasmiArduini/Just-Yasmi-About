@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Yasmi About</title>
+
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(
+          to bottom,
+          #203c27,
+          #224a38,
+          #2f6a56,
+          #5d8477
+        );
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
+
+      .navbar {
+        background-color: #333;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .navbar .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: rgb(255, 248, 220);
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        padding: 8px 12px;
+        border-radius: 20px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+
+      .navbar ul li a:hover {
+        background-color: rgb(255, 248, 220);
+        transform: translateY(-2px);
+      }
+      
+      .wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px; /* Espaço para o header fixo */
+      }
+
+      .container {
+        text-align: center;
+        padding: 20px;
+        animation: fade-in 1s ease-in;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        animation: fade-in 1s ease-in;
+      }
+
+      .price-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 30px;
+        margin: 20px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 350px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .price-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .price-card h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      .price-card p {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+      }
+
+      .price-card span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ff6f61;
+      }
+
+      footer {
+        background-color: #333;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #fff;
+        margin-top: auto;
+      }
+
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .navbar ul {
+          gap: 10px;
+        }
+
+        .navbar ul li a {
+          padding: 6px 10px;
+          font-size: 0.9rem;
+        }
+
+        .price-card {
+          width: 100%;
+          max-width: 300px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Just Yasmi About</div>
+        <ul>
+          <li><a href="JustYasmiAbout.html">Início</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="valores.html">Preços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <main>
+        <div class="container">
+          <h1>Meus Preços</h1>
+          <p>
+            Aqui estão os pacotes de preços para os meus serviços. Ofereço
+            soluções de alta qualidade e flexibilidade para se ajustar às suas
+            necessidades.
+          </p>
+
+          <div class="price-card">
+            <h2>Pacote Básico</h2>
+            <p>
+              Para pequenos projetos ou ajustes rápidos. Ideal para quem precisa
+              de uma solução simples e eficiente.
+            </p>
+            <span>USD$ 500,00</span>
+          </div>
+
+          <div class="price-card">
+            <h2>Pacote Intermediário</h2>
+            <p>
+              Para projetos de médio porte, com funcionalidades mais avançadas.
+              Inclui mais tempo de desenvolvimento e suporte.
+            </p>
+            <span>USD$ 1.500,00</span>
+          </div>
+
+          <div class="price-card">
+            <h2>Pacote Avançado</h2>
+            <p>
+              Projetos mais complexos, com funcionalidades personalizadas e
+              integração com outras plataformas. O pacote ideal para quem busca
+              excelência.
+            </p>
+            <span>USD$ 3.000,00</span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>© 2025 Just Yasmi About. Todos os Direitos Reservados.</footer>
+  </body>
+</html>
