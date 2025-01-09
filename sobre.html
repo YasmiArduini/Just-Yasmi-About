@@ -27,65 +27,65 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
 
       header {
         position: fixed;
         top: 0;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.85);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         z-index: 1000;
       }
 
       .navbar {
-        background-color: #333;
-        padding: 10px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px;
       }
 
       .navbar .logo {
         font-size: 1.8rem;
         font-weight: bold;
-        color: rgb(255, 248, 220);
+        color: #fceabb;
         text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
       }
 
       .navbar ul {
         list-style: none;
         display: flex;
-        gap: 15px;
+        gap: 20px;
       }
 
       .navbar ul li a {
         text-decoration: none;
-        color: white;
+        color: #f4f4f4;
         font-size: 1rem;
-        padding: 8px 12px;
+        padding: 8px 16px;
         border-radius: 20px;
         transition: background-color 0.3s, transform 0.3s;
       }
 
       .navbar ul li a:hover {
-        background-color: rgb(255, 248, 220);
+        background-color: #fceabb;
+        color: #333;
         transform: translateY(-2px);
       }
 
       .wrapper {
-        flex: 1;
+        margin-top: 120px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 100px;
         text-align: center;
+        width: 100%;
+        max-width: 900px;
       }
 
       h1 {
@@ -104,16 +104,28 @@
       h2 {
         font-size: 2rem;
         margin-top: 30px;
-        color: #ff6f61;
+        color: #ccc;
+      }
+
+      .about-text {
+        text-align: justify;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        line-height: 1.8;
+        color: #e0e0e0;
       }
 
       .skills {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        display: flex;
+        flex-wrap: wrap;
         gap: 20px;
+        justify-content: center;
         margin-top: 30px;
         width: 100%;
-        max-width: 1200px;
       }
 
       .skill-card {
@@ -123,6 +135,7 @@
         text-align: center;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s, box-shadow 0.3s;
+        width: 300px;
       }
 
       .skill-card:hover {
@@ -142,12 +155,13 @@
       }
 
       footer {
-        background-color: #333;
-        padding: 15px 0;
+        background: #1a1a1a;
+        padding: 20px;
         text-align: center;
         font-size: 0.9rem;
-        color: #fff;
-        margin-top: auto;
+        color: #ccc;
+        margin-top: 30px;
+        width: 100%;
       }
 
       @keyframes fade-in {
@@ -181,7 +195,8 @@
         }
 
         .skill-card {
-          padding: 15px;
+          width: 100%;
+          max-width: 250px;
         }
       }
     </style>
@@ -193,7 +208,7 @@
         <div class="logo">Just Yasmi About</div>
         <ul>
           <li><a href="index.html">Início</a></li>
-          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="linguagens.html">Linguagens</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="valores.html">Preços</a></li>
           <li><a href="contato.html">Contato</a></li>
@@ -203,8 +218,8 @@
 
     <div class="wrapper">
       <main>
-        <div class="container">
-          <h1>Sobre Mim</h1>
+        <h1>Sobre Mim</h1>
+        <div class="about-text">
           <p>
             Olá! Meu nome é Yasmi e sou desenvolvedora apaixonada por
             tecnologia. Ao longo da minha carreira, tenho trabalhado em diversos
@@ -220,30 +235,30 @@
             utilizo, bem como as tecnologias que mais gosto de trabalhar. Estou
             sempre aberta a novos desafios e parcerias!
           </p>
+        </div>
 
-          <h2>Minhas Habilidades</h2>
-          <div class="skills">
-            <div class="skill-card">
-              <h3>Java</h3>
-              <p>
-                Desenvolvo sistemas robustos e escaláveis com Java, focando no
-                desempenho e segurança.
-              </p>
-            </div>
-            <div class="skill-card">
-              <h3>C#</h3>
-              <p>
-                Trabalho com C# para construir aplicações desktop e web
-                utilizando o .NET.
-              </p>
-            </div>
-            <div class="skill-card">
-              <h3>TypeScript</h3>
-              <p>
-                Utilizo TypeScript para desenvolver interfaces dinâmicas e
-                escaláveis com frameworks como Angular e React.
-              </p>
-            </div>
+        <h2>Minhas Habilidades</h2>
+        <div class="skills">
+          <div class="skill-card">
+            <h3>Java</h3>
+            <p>
+              Desenvolvo sistemas robustos e escaláveis com Java, focando no
+              desempenho e segurança.
+            </p>
+          </div>
+          <div class="skill-card">
+            <h3>C#</h3>
+            <p>
+              Trabalho com C# para construir aplicações desktop e web utilizando
+              o .NET.
+            </p>
+          </div>
+          <div class="skill-card">
+            <h3>TypeScript</h3>
+            <p>
+              Utilizo TypeScript para desenvolver interfaces dinâmicas e
+              escaláveis com frameworks como Angular e React.
+            </p>
           </div>
         </div>
       </main>

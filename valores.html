@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Just Yasmi About</title>
-
     <link rel="icon" href="logo.png" type="image/png" />
 
     <style>
@@ -16,81 +15,74 @@
 
       body {
         font-family: "Arial", sans-serif;
-        background: linear-gradient(
-          to bottom,
-          #203c27,
-          #224a38,
-          #2f6a56,
-          #5d8477
-        );
-        color: #fff;
+        background: linear-gradient(to bottom, #1a3a24, #2b5d41, #4c8061);
+        color: #f4f4f4;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        line-height: 1.6;
       }
 
       header {
         position: fixed;
         top: 0;
         width: 100%;
-        background: rgba(0, 0, 0, 0.8);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0.85);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         z-index: 1000;
       }
 
       .navbar {
-        background-color: #333;
-        padding: 10px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 1000;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        padding: 10px 20px;
       }
 
       .navbar .logo {
         font-size: 1.8rem;
         font-weight: bold;
-        color: rgb(255, 248, 220);
+        color: #fceabb;
         text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
       }
 
       .navbar ul {
         list-style: none;
         display: flex;
-        gap: 15px;
+        gap: 20px;
       }
 
       .navbar ul li a {
         text-decoration: none;
-        color: white;
+        color: #f4f4f4;
         font-size: 1rem;
-        padding: 8px 12px;
+        padding: 8px 16px;
         border-radius: 20px;
         transition: background-color 0.3s, transform 0.3s;
       }
 
       .navbar ul li a:hover {
-        background-color: rgb(255, 248, 220);
+        background-color: #fceabb;
+        color: #333;
         transform: translateY(-2px);
       }
-      
+
       .wrapper {
         flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 100px; /* Espaço para o header fixo */
+        padding-top: 100px;
       }
 
       .container {
+        max-width: 1200px;
+        margin: 0 auto;
         text-align: center;
         padding: 20px;
-        animation: fade-in 1s ease-in;
       }
 
       h1 {
@@ -99,11 +91,17 @@
         animation: fade-in 1s ease-in;
       }
 
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #dcdcdc;
+      }
+
       .price-card {
         background: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
-        padding: 30px;
-        margin: 20px;
+        padding: 20px;
+        margin: 20px auto;
         text-align: center;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         width: 100%;
@@ -117,28 +115,40 @@
       }
 
       .price-card h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: 10px;
       }
 
       .price-card p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         margin-bottom: 15px;
+        color: #eaeaea;
       }
 
       .price-card span {
         font-size: 1.5rem;
         font-weight: bold;
-        color: #ff6f61;
+        color: #183d19;
       }
 
       footer {
-        background-color: #333;
-        padding: 15px 0;
+        background: #1a1a1a;
+        padding: 20px;
         text-align: center;
         font-size: 0.9rem;
-        color: #fff;
+        color: #ccc;
         margin-top: auto;
+      }
+
+      footer a {
+        color: #ff6f61;
+        text-decoration: none;
+        margin-left: 5px;
+        transition: color 0.3s ease;
+      }
+
+      footer a:hover {
+        color: #ff9261;
       }
 
       @keyframes fade-in {
@@ -164,12 +174,35 @@
         }
 
         .price-card {
-          width: 100%;
           max-width: 300px;
         }
 
         h1 {
           font-size: 2rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .navbar ul {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .wrapper {
+          padding-top: 120px;
+        }
+
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 1rem;
         }
       }
     </style>
@@ -181,7 +214,7 @@
         <div class="logo">Just Yasmi About</div>
         <ul>
           <li><a href="index.html">Início</a></li>
-          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="linguagens.html">Linguagens</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="valores.html">Preços</a></li>
           <li><a href="contato.html">Contato</a></li>
