@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Just Yasmi About</title>
 
-    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="icon" href="./images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
 
     <style>
         /* Global Styles */
@@ -97,38 +98,40 @@
         /* Cards Section */
         .language-cards {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
             gap: 40px;
             margin: 20px 0;
-            align-items: flex-start;
+            justify-content: center;
         }
 
         .card {
             display: flex;
+            flex-direction: column;
             align-items: center;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             padding: 20px;
             width: 100%;
-            max-width: 900px;
+            max-width: 300px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
         }
 
         .card:hover {
-            transform: translateX(10px);
+            transform: translateY(-10px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
         }
 
         .card img {
             width: 80px;
             height: 80px;
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
 
         .card h3 {
             font-size: 1.5rem;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
 
         .card p {
@@ -167,7 +170,7 @@
             <div class="logo">Just Yasmi About</div>
             <ul>
                 <li><a href="index.html">Início</a></li>
-                <li><a href="servicos.html">Linguagens</a></li>
+                <li><a href="linguagens.html">Linguagens</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="valores.html">Preços</a></li>
                 <li><a href="contato.html">Contato</a></li>
@@ -179,46 +182,34 @@
         <main>
             <div class="language-cards">
                 <div class="card">
-                    <img src="java-icon.png" alt="Java" />
-                    <div>
-                        <h3>Java</h3>
-                        <p>Desenvolvo aplicações robustas e seguras com foco em backend.</p>
-                    </div>
+                    <img src="./images/java-icon.png" alt="Java" />
+                    <h3>Java</h3>
+                    <p>Desenvolvo aplicações robustas e seguras com foco em backend.</p>
                 </div>
                 <div class="card">
-                    <img src="csharp-icon.png" alt="C#" />
-                    <div>
-                        <h3>C#</h3>
-                        <p>Utilizo para desenvolvimento de aplicativos desktop e web.</p>
-                    </div>
+                    <img src="./images/csharp-icon.png" alt="C#" />
+                    <h3>C#</h3>
+                    <p>Utilizo para desenvolvimento de aplicativos desktop e web.</p>
                 </div>
                 <div class="card">
-                    <img src="typescript-icon.png" alt="TypeScript" />
-                    <div>
-                        <h3>TypeScript</h3>
-                        <p>Crio interfaces dinâmicas e escaláveis com frameworks modernos.</p>
-                    </div>
+                    <img src="./images/typescript-icon.png" alt="TypeScript" />
+                    <h3>TypeScript</h3>
+                    <p>Crio interfaces dinâmicas e escaláveis com frameworks modernos.</p>
                 </div>
                 <div class="card">
-                    <img src="html-icon.png" alt="HTML" />
-                    <div>
-                        <h3>HTML</h3>
-                        <p>Utilizo para estruturar a base das páginas web.</p>
-                    </div>
+                    <img src="./images/html-icon.png" alt="HTML" />
+                    <h3>HTML</h3>
+                    <p>Utilizo para estruturar a base das páginas web.</p>
                 </div>
                 <div class="card">
-                    <img src="python-icon.png" alt="Python" />
-                    <div>
-                        <h3>Python</h3>
-                        <p>Utilizo para desenvolvimento web, análise de dados e automação.</p>
-                    </div>
+                    <img src="./images/python-icon.png" alt="Python" />
+                    <h3>Python</h3>
+                    <p>Utilizo para desenvolvimento web, análise de dados e automação.</p>
                 </div>
                 <div class="card">
-                    <img src="javascript-icon.png" alt="JavaScript" />
-                    <div>
-                        <h3>JavaScript</h3>
-                        <p>Utilizo para adicionar interatividade e dinamismo às páginas web.</p>
-                    </div>
+                    <img src="./images/javascript-icon.png" alt="JavaScript" />
+                    <h3>JavaScript</h3>
+                    <p>Utilizo para adicionar interatividade e dinamismo às páginas web.</p>
                 </div>
             </div>
         </main>

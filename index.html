@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Just Yasmi About</title>
 
-  <link rel="icon" href="logo.png" type="image/png" />
+  <link rel="icon" href="./images/logo.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
 
   <style>
     * {
@@ -46,6 +47,14 @@
         font-weight: bold;
         color: #fceabb;
         text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar .logo img.logo-icon {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
       }
 
       .navbar ul {
@@ -130,7 +139,7 @@
     }
 
     button:hover {
-      background-color: #d55747;
+      background-color: #2e4e2a;
       transform: translateY(-2px);
     }
 
@@ -162,7 +171,7 @@
       }
 
       footer a:hover {
-        color: #ff9261;
+        color: #193516;
       }
 
     @media (max-width: 768px) {
@@ -189,7 +198,10 @@
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">Just Yasmi About</div>
+      <div class="logo">
+        <img src="./images/logo-icon.png" alt="Logo" class="logo-icon" />
+        Just Yasmi About
+      </div>
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="linguagens.html">Linguagens</a></li>
